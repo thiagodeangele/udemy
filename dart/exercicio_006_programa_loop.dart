@@ -4,7 +4,7 @@ main() {
 
   while (condicao) {
     print("Escreva um texto ======");
-    String text = stdin.readLineSync();
+    var text = stdin.readLineSync();
     if (text == 'sair') {
       condicao = false;
       print("=== Finalizado ===");

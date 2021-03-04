@@ -6,7 +6,7 @@ main() {
 
 calculoIMC() {
   print("Digite seu peso: ");
-  String inputPeso = stdin.readLineSync();
+  var inputPeso = stdin.readLineSync();
   double peso = double.parse(inputPeso);
 
   print("Digite sua altura: ");

@@ -114,7 +114,11 @@ def classificIMC (imc):
     else:
         print(f'\n{amarelo}•{fecha} Com o peso {underline}{peso}kg{fecha} e a altura {underline}{altura}{fecha}, sua classificação é: {amarelo}ABAIXO DO PESO{fecha}\n')
 
-
+def processando():
+    sleep(0.3)
+    print()
+    print('Calculando seu IMC ...')
+    sleep(1.0)
 
 # Programa Principal
 # .................................
@@ -126,9 +130,6 @@ sleep(0.5)
 peso = validaNumeros('• Digite seu Peso: ')
 altura = validaNumeros('• Digite sua Altura: ')
 
-sleep(0.3)
-print()
-print('Calculando seu IMC ...')
-sleep(1.0)
+processando()
 
 classificIMC(imc(peso, altura))
